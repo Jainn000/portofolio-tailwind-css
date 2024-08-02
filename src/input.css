@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalnia+Glaze:wght@100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components{
+    .hover-navbar{
+        @apply hover:border-b-2 hover:border-b-primary transition-all duration-300;
+    }
+}
+@layer components{
+    .text-kalnia{
+        @apply bg-primary bg-clip-text text-transparent
+    }
+}
+@layer components{
+    .icons{
+        @apply text-xl m-1 rounded-full hover:shadow-md hover:shadow-primary hover:text-white
+    }
+}
+@layer components{
+    .hover-shadow{
+        @apply hover:shadow-lg hover:shadow-primary
+    }
+}
+@layer components{
+    .glassmorphism{
+        @apply backdrop-blur-xl bg-black/50 shadow-xl shadow-black
+    }
+}
+@layer components{
+    .set-kalnia{
+        @apply font-kalnia tracking-wider
+    }
+}
